@@ -1,0 +1,273 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="895.9999999999999,2210.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="530.6666666666666,594" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Choice" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="496.6666666666667,332.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter your choice" OptionsString="Pongal;Diwali;Christmas" Title="This is input">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Choice]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Choice]" sap:VirtualizedContainerService.HintSize="496.6666666666667,169.33333333333334" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+        <Switch.Default>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Give a valid input&quot;]" />
+        </Switch.Default>
+        <x:Null x:Key="Pongal" />
+      </Switch>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="530.6666666666666,1594" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="61a493aa-fe91-40cd-957f-704d18451768" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1352" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4efdd64e-5c6e-4191-b763-9afc0ff2a832" InformativeScreenshot="3deba8dbe278035f39bdf262b5566b14" Selector="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35739809-be58-4acb-8844-841eb7f4a755" InformativeScreenshot="3a190c3d9b5a26c09f14404f0823c6ef" Selector="&lt;webctrl aaname='Sign in' class='hmenu-item' parentid='hmenu-content' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DisplayName="Type Into 'Email or mobile phone n…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Text="9345776153" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" ContentHash="xxLIrtot40KA_t0i9v0T2g" CvElementArea="256, 357, 449, 52" CvType="InputBox" DesignTimeRectangle="259, 360, 445, 47" DesignTimeScaleFactor="1.5" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ap_email' tag='INPUT' type='email' class='a-input-text a-span12 auth-autofocus auth-required-field auth-require-claim-validation' aaname='               Email or mobile phone number             ' /&gt;" Guid="121de20e-90b9-4eb4-b0af-0db370b53d49" InformativeScreenshot="4b76ba63624ac7a3767ef924c5ad687b.png" IsResponsive="True" Reference="pN9ec2FstECmmZwUooDDWw/KlCY7UxgpkWHPUdPr1GLbg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c58d1c0e-1f1a-43cf-a826-f253a6f493a8" CvTextArea="261, 331, 288, 21" CvTextArgument="Email or mobile phone number" CvType="Text" DesignTimeRectangle="259, 329, 445, 31" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='               Email or mobile phone number             ' check:innerText='Email or mobile phone number' /&gt;" Guid="74befdca-5d1c-4285-901a-5722ea6b7795" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT continue'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="8a1913c8-3a24-434e-a7b4-6d220858b105" ContentHash="8WEjC_HlpkWfewCTU9ic1Q" CvElementArea="257, 425, 448, 49" CvTextArea="441, 441, 82, 18" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="260, 429, 443, 43" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='continue' tag='INPUT' type='submit' class='a-button-input' aaname='' /&gt;" Guid="d0aa1c56-acd6-4c7a-bdd3-4c82535c9e05" InformativeScreenshot="d1988fc4681a0d79c197fcb7c9b5a2b7.png" Reference="pN9ec2FstECmmZwUooDDWw/3veVxn42FUuPcFZwXPT9HQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  ap_password'" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="898df825-3c4c-48cb-92dc-3418bc57f84c" InformativeScreenshot="4d96127f1ed1cdcfcc28f1bac077c46e" Selector="&lt;webctrl id='ap_password' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="61a493aa-fe91-40cd-957f-704d18451768" Text="Kavin@200424" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="amazon.com/ap/signin" CVScreenId="be80ed82-7c98-4a19-8e47-2c2739f10561" ContentHash="e-UjgDF-3EilEHRgR_OKzw" CvElementArea="268, 407, 452, 51" CvType="InputBox" DesignTimeRectangle="272, 410, 445, 46" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='ap_password' tag='INPUT' type='password' class='a-input-text a-span12 auth-autofocus auth-required-field' aaname='                                 Password                                      ' /&gt;" Guid="63b60268-ad53-44ce-bb88-29a79abb3468" InformativeScreenshot="fbfafee301be4b06ff47b01f0d90dbf9.png" Reference="pN9ec2FstECmmZwUooDDWw/kIHNPisrkUO2MbyN3ZMTHQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign-In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="be80ed82-7c98-4a19-8e47-2c2739f10561" CvTextArea="273, 381, 88, 19" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="272, 378, 179, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='a-form-label' aaname='                                 Password                                      ' check:innerText='Password' /&gt;" Guid="7dfcd340-9c15-4e92-911d-dd44d7b77e20" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="_UrIh6TTUk2jVw7zLbjm7w" IconBase64="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" InformativeScreenshot="17d1896579d08e6a4e91664082cc2537.jpg" Reference="pN9ec2FstECmmZwUooDDWw/A2IsXlRlIkGCbFHPbUtRWg" Selector="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" Title="Amazon.com. Spend less. Smile more." Url="https://www.amazon.com/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
